@@ -1,5 +1,5 @@
-#include "main.h"
-#include <unistd.>
+#include <unistd.h>
+
 /**
  * _putchar - writes the character cto stdout
  * @c: The character to print
