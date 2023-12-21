@@ -1,5 +1,9 @@
 #include "main.h"
 #include <stdio.h>
+/**
+ * times_table - prints 9 times table
+ * Return: 0
+ */
 
 void times_table(void)
 {
@@ -18,7 +22,6 @@ void times_table(void)
 				if (j != 9)
 					printf(", ");
 			}
-			printf("%2d, ", result);
 		}
 		printf("\n");
 	}
