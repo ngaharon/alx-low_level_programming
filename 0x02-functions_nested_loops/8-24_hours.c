@@ -1,17 +1,23 @@
 #include "main.h"
 /**
- * print_last_digit - prints last digit
- * @a: function parameter
- * Return: k
+ * jack_bauer - prints every minutes of the day
+ * Return: void
  */
 
-int print_last_digit(int a)
+void jack_bauer(void)
 {
-	int k;
+	int k, j;
 
-	k = a % 10;
-	if (a < 0)
-		k = -k;
-	_putchar(k + '0');
-	return (k);
+	for (k = 0 ; k < 24 ; k++)
+	{
+		for (j = 0 ; j < 60 ; j++)
+		{
+			_putchar(k / 10 + '0');
+			_putchar(k % 10 + '0');
+			_putchar(':');
+			_putchar(j / 10 + '0');
+			_putchar(j % 10 + '0');
+			_putchar('\n');
+		}
+	}
 }
