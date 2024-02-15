@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * create_file - prog creates a file
